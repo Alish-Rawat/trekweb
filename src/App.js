@@ -4,6 +4,7 @@ import Footer from "./Components/Footer";
 import Body from "./Components/Body";
 import About from "./Components/About";
 import Treks from "./Components/Treks";
+import Kedarkantha from "./Components/Kedarkantha";
 
 const AppLayout = () => {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<AppLayout />}></Route>
+          <Route path="/kedarkantha" element={<Kedarkantha />}></Route>
         </Routes>
         <Footer />
       </BrowserRouter>
