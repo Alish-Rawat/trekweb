@@ -4,6 +4,10 @@ import Yamunotri from "../images/Yamunotri1.jpg";
 import HarKiDunn from "../images/HarKiDunnn.jpg";
 import { Link } from "react-router-dom";
 
+const scrollToTop = () => {
+  window.scrollTo(0, 0);
+};
+
 const Treks = () => {
   return (
     <div className="border mx-32 my-10 p-3 relative">
@@ -78,7 +82,10 @@ const Treks = () => {
             <div className=" flex justify-between items-center shadow-lg  py-1">
               <p>10,804 ft (3,293 m)</p>
               <Link to={"/kedarkantha"}>
-                <button className="bg-blue-600  px-6 py-2  font-bold text-sm text-white animate-pulse">
+                <button
+                  onClick={scrollToTop}
+                  className="bg-blue-600  px-6 py-2  font-bold text-sm text-white animate-pulse"
+                >
                   Book Now
                 </button>
               </Link>
