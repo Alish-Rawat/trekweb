@@ -13,7 +13,7 @@ const Body = () => {
           EXPLORE
         </button>
       </div>
-      <div className=" absolute right-[50%] bottom-[3%] w-8 animate-bounce">
+      <div className=" absolute right-[50%] bottom-[8%] w-8 animate-bounce">
         <img src={downarrow} alt="down" srcset="" />
       </div>
       <img className="w-[100%]" src={trek} alt="imggg" srcset="" />
