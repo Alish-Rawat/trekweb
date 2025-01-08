@@ -1,5 +1,7 @@
 import Kedarkantha from "../images/kedarkantha.jpg";
 import gangotri from "../images/gangotri.jpg";
+import Yamunotri from "../images/Yamunotri1.jpg";
+import HarKiDunn from "../images/HarKiDunnn.jpg";
 
 const Treks = () => {
   return (
@@ -8,8 +10,8 @@ const Treks = () => {
         TREKS
       </h1>
 
-      <div className="flex flex-col flex-wrap  border border-red-500 px-28 m-4 h-[50rem] container">
-        <div className="w-[40%] h-[30rem]  m-3 relative  hover:opacity-90">
+      <div className="flex flex-col flex-wrap  border border-red-500 px-28 m-4 h-[60rem] container">
+        <div className="w-[45%] h-[35rem]  m-3 relative  hover:opacity-90 shadow-xl border ">
           <div className="absolute   px-4 py-1 bottom-0 text-white space-y-2">
             <h1 className=" flex justify-end text-3xl font-bold shadow-lg p-2 border-b-2 ">
               KEDARKANTHA
@@ -35,7 +37,7 @@ const Treks = () => {
           />
         </div>
 
-        <div className="w-[40%] h-[15rem]  m-3 relative hover:opacity-90 ">
+        <div className="w-[45%] h-[18rem]  m-3 relative hover:opacity-90 shadow-xl border ">
           <div className="absolute    px-4 py-1 bottom-0 text-white">
             <h1 className=" flex justify-start text-2xl font-bold shadow-lg p-2 border-b-2 ">
               GANGOTRI
@@ -61,8 +63,58 @@ const Treks = () => {
           />
         </div>
 
-        <div className="w-[40%] h-[15rem] border border-blue-600 m-3">3</div>
-        <div className="w-[40%] h-[30rem] border border-blue-600 m-3">4</div>
+        <div className="w-[45%] h-[18rem]  m-3 relative hover:opacity-90 shadow-xl border ">
+          <div className="absolute    px-4 py-1 bottom-0 text-white">
+            <h1 className=" flex justify-start text-2xl font-bold shadow-lg p-2 border-b-2 ">
+              YAMUNOTRI
+            </h1>
+
+            <p className="font-semibold shadow-xl   text-left pr-24 translate-y-2">
+              Yamunotri is also a sacred pilgrimage site in the Char Dham
+              situated in Uttarkashi.
+            </p>
+
+            <div className=" flex justify-between items-center shadow-lg  py-1">
+              <p>10,804 ft (3,293 m)</p>
+              <button className="bg-blue-600  px-6 py-2  font-bold text-sm text-white animate-pulse">
+                Book Now
+              </button>
+            </div>
+          </div>
+          <img
+            className="h-[100%] border shadow-lg"
+            src={Yamunotri}
+            alt=""
+            srcset=""
+          />
+        </div>
+
+        <div className="w-[45%] h-[35rem]  m-3 relative  hover:opacity-90 shadow-xl border ">
+          <div className="absolute   px-4 py-1 bottom-0 text-white space-y-2">
+            <h1 className=" flex justify-end text-3xl font-bold shadow-lg p-2 border-b-2 ">
+              Har Ki Dun
+            </h1>
+
+            <p className="font-semibold shadow-xl   text-right pl-24">
+              Har Ki Dun is a cradle-shaped hanging valley in the Garhwal
+              Himalayas of Uttarakhand, India. The region is surrounded with
+              green Bugyals
+            </p>
+
+            <div className=" flex justify-between items-center shadow-lg pb-3 py-2">
+              <p>11,700 ft (3,566 m)</p>
+              <button className="bg-blue-600  px-6 py-2  font-bold text-white animate-pulse">
+                Book Now
+              </button>
+            </div>
+          </div>
+          <img
+            className="h-[100%] border shadow-lg"
+            src={HarKiDunn}
+            alt=""
+            srcset=""
+          />
+        </div>
       </div>
     </div>
   );
