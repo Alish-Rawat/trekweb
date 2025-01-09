@@ -1,13 +1,14 @@
 import facebook from "../images/facebook2.png";
 import instagram from "../images/instagram.png";
 import youtube from "../images/youtube.png";
+import whatsapp from "../images/whatsapp.png";
 import phone from "../images/phone.png";
 import mail from "../images/mail.png";
 import location from "../images/location.png";
 
 const Footer = () => {
   return (
-    <div className="bg-gray-900 flex justify-around mt-4 p-5 text-white">
+    <div className="bg-gray-900 flex justify-around mt-4 p-5 text-white font-poppins">
       <div className="border p-4 text-3xl font-bold">LOGO</div>
       <div className="">
         <h1 className="flex space-x-2  p-4">
@@ -41,6 +42,12 @@ const Footer = () => {
         <img
           className="h-11 px-1 cursor-pointer hover:border border- rounded-xl shadow-lg"
           src={youtube}
+          alt="facebook"
+          srcset=""
+        />
+        <img
+          className="h-9 px-1 cursor-pointer hover:border border- rounded-xl shadow-lg"
+          src={whatsapp}
           alt="facebook"
           srcset=""
         />

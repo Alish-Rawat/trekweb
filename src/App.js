@@ -23,7 +23,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<AppLayout />}></Route>
-          <Route path="/kedarkantha" element={<Kedarkantha />}></Route>
+          <Route path="/kedarkantha" element={<Kedarkantha num="0" />}></Route>
         </Routes>
         <Footer />
       </BrowserRouter>

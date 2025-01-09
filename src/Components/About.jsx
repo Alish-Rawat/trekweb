@@ -4,7 +4,7 @@ const About = () => {
   return (
     <>
       <div className="h-96  border">
-        <h1 className="text-4xl font-semibold text-center">
+        <h1 className="text-4xl font-semibold text-center font-roboto">
           CERTIFICATION AUTHORITY
         </h1>
         <div className="border h-full flex justify-between">

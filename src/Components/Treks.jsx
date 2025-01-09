@@ -11,14 +11,14 @@ const scrollToTop = () => {
 const Treks = () => {
   return (
     <div className="border mx-32 my-10 p-3 relative">
-      <h1 className="border m-10 flex justify-center text-5xl font-bold">
+      <h1 className="border m-10 flex justify-center text-5xl font-bold font-roboto">
         TREKS
       </h1>
 
       <div className="flex flex-col flex-wrap  border border-red-500 px-28 m-4 h-[60rem] container">
         <div className="w-[45%] h-[35rem]  m-3 relative  hover:opacity-90 shadow-xl border ">
           <div className="absolute   px-4 py-1 bottom-0 text-white space-y-2">
-            <h1 className=" flex justify-end text-3xl font-bold shadow-lg p-2 border-b-2 ">
+            <h1 className=" flex justify-end text-3xl font-bold shadow-lg p-2 border-b-2 font-roboto">
               KEDARKANTHA
             </h1>
 
@@ -28,10 +28,15 @@ const Treks = () => {
             </p>
 
             <div className=" flex justify-between items-center shadow-lg pb-3 py-2">
-              <p>12,500 ft (3,800 m)</p>
-              <button className="bg-blue-600  px-6 py-2  font-bold text-white animate-pulse">
-                Book Now
-              </button>
+              <p className="font-roboto shadow-xl">12,500 ft (3,800 m)</p>
+              <Link to={"/kedarkantha"}>
+                <button
+                  onClick={scrollToTop}
+                  className="bg-blue-600  px-6 py-2  font-bold text-white animate-pulse "
+                >
+                  See More & BOOK
+                </button>
+              </Link>
             </div>
           </div>
           <img
@@ -54,7 +59,7 @@ const Treks = () => {
             </p>
 
             <div className=" flex justify-between items-center shadow-lg  py-1">
-              <p>10,200 ft (3,100 m)</p>
+              <p className="font-roboto mt-2 shadow-xl">10,200 ft (3,100 m)</p>
               <button className="bg-blue-600  px-6 py-2  font-bold text-sm text-white animate-pulse">
                 Book Now
               </button>
@@ -80,7 +85,7 @@ const Treks = () => {
             </p>
 
             <div className=" flex justify-between items-center shadow-lg  py-1">
-              <p>10,804 ft (3,293 m)</p>
+              <p className="font-roboto mt-2 shadow-xl">10,804 ft (3,293 m)</p>
               <Link to={"/kedarkantha"}>
                 <button
                   onClick={scrollToTop}
@@ -112,7 +117,7 @@ const Treks = () => {
             </p>
 
             <div className=" flex justify-between items-center shadow-lg pb-3 py-2">
-              <p>11,700 ft (3,566 m)</p>
+              <p className="font-roboto shadow-xl">11,700 ft (3,566 m)</p>
               <button className="bg-blue-600  px-6 py-2  font-bold text-white animate-pulse">
                 Book Now
               </button>
